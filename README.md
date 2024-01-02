@@ -19,10 +19,14 @@ Confirm that the disk partition has enough space to hold the uncompressed volume
 
 # Installation procedure
 Expand the tar file into an appropriate directory using the tar command:
+
+```
 tar xvzf splunk_package_name.tgz
 The default installation directory is splunk in the current working directory. To install into /opt/splunk, use the following command:
 
 tar xvzf splunk_package_name.tgz -C /opt
+
+```
 
 # RedHat RPM installation
 RPM packages are available for Red Hat, CentOS, and similar versions of Linux.
@@ -34,6 +38,8 @@ After installation, software package validation commands (such as rpm -Vp <rpm_f
 Confirm that the RPM package you want is available locally on the target machine.
 Verify that the Splunk Enterprise user account that will run the Splunk services can read and access the file.
 If needed, change permissions on the file.
+
+```
 chmod 644 splunk_package_name.rpm
 Invoke the following command to install the Splunk Enterprise RPM in the default directory /opt/splunk.
 rpm -i splunk_package_name.rpm
@@ -46,12 +52,16 @@ rpm -i --prefix=/new_directory splunk_package_name.rpm
 # Replace an existing Splunk Enterprise installation with an RPM package
 Run rpm with the --prefix flag and reference the existing Splunk Enterprise directory.
 rpm -i --replacepkgs --prefix=/splunkdirectory/ splunk_package_name.rpm
+```
 
 # Automate RPM installation with Red Hat Linux Kickstart
 If you want to automate an RPM install with Kickstart, edit the kickstart file and add the following.
+
+```
 ./splunk start --accept-license
 ./splunk enable boot-start 
 The enable boot-start line is optional.
+```
 
 # Debian .DEB installation
 # Prerequisites to installation
@@ -63,6 +73,8 @@ If you need to install Splunk Enterprise somewhere else, or if you use a symboli
 
 # Installation procedure
 Run the dpkg installer with the Splunk Enterprise Debian package name as an argument.
+
+```
 dpkg -i splunk_package_name.deb
 Debian commands for showing installation status
 Splunk package status:
@@ -71,6 +83,7 @@ dpkg --status splunk
 List all packages:
 
 dpkg --list
+```
 
 # Information on expected default shell and caveats for Debian shells
 
@@ -84,6 +97,8 @@ As part of the initial startup process, Splunk Enterprise prompts you to create 
 
 
 Accept the Splunk license automatically when starting for the first time
+
+```
 Add the --accept-license option to the start command:
 $SPLUNK_HOME/bin/splunk start --accept-license
 Create the Splunk Enterprise admin username. This is the user that you log into Splunk Enterprise with, not the user that you use to log into your machine or onto splunk.com. You can press Enter to use the default username of admin.
@@ -127,12 +142,13 @@ If you get stuck, we're here to help.
 Look for answers here: http://docs.splunk.com
 
 The Splunk web interface is at http://localhost:8000
-
+```
 
 
 # Launch Splunk Web
 With a supported web browser, navigate to:
 
+```
 http://<host name or ip address>:8000
-
+```
 
