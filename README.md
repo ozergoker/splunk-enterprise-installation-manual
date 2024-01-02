@@ -1,5 +1,8 @@
 # Splunk® Enterprise Installation Manual
 
+![image](https://github.com/ozergoker/splunk-enterprise-installation-manual/blob/main/splunk-logo-dark.svg)
+
+
 Splunk® Enterprise Installation Manual
 
 Splunk Enterprise is a software product that enables you to search, analyze, and visualize the data gathered from the components of your IT infrastructure or business. Splunk Enterprise takes in data from websites, applications, sensors, devices, and so on. After you define the data source, Splunk Enterprise indexes the data stream and parses it into a series of individual events that you can view and search.
