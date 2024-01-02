@@ -1,4 +1,4 @@
-# Splunk® Enterprise Installation Manual
+# Splunk® Enterprise Installation Manual V9.1.2
 
 ![image](https://github.com/ozergoker/splunk-enterprise-installation-manual/blob/main/splunk-logo-dark.svg)
 
